@@ -42,7 +42,19 @@
 		type속성에 percent값을 대입
 		value값이 0~1사이의 값만 가능 0% : 0 -> 100% : 1
 	</p>
-	<p><fmt:formatNumber value="${numtest2 }" type="percent"/>
+	<p><fmt:formatNumber value="${numtest2 }" type="percent"/></p>
+	<p><fmt:formatNumber value="0.5" type="percent"/></p>
+	<p><fmt:formatNumber value="0.25" type="percent"/></p>
+	
+	
+	<h3>패턴으로 숫자를 표시하기</h3>
+	<p>
+		0 : 
+		# : 
+	</p>
+	
+	
+	
 	
 	
 </body>
