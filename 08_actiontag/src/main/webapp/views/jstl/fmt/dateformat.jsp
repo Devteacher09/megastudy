@@ -74,6 +74,15 @@
 		</fmt:timeZone>
 	</p>
 	
+	<h3>fmt이용해서 지역설정하기</h3>
+	<p>
+		fmt:setLocale
+			value="국가코드"
+	</p>
+	<fmt:setLocale value="ja_JP"/>
+	<fmt:formatDate value="${today }" type="time" timeStyle="full"/>
+	<fmt:formatDate value="${today }" type="date" dateStyle="full"/>
+	
 	
 </body>
 </html>
