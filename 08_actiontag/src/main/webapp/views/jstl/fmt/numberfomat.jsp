@@ -49,9 +49,16 @@
 	
 	<h3>패턴으로 숫자를 표시하기</h3>
 	<p>
-		0 : 
-		# : 
+		0 : 지정한 자리수에 수가 없으면 0을 표시하는 패턴
+		# : 지정한 자리수에 수가 없으면 생략하는 패턴
+		pattern속성을 이용함.
 	</p>
+	<h3>0 : ${numtest3 } -> <fmt:formatNumber value="${numtest3 }" pattern="000,000,000"/></h3>
+	<h3># : ${numtest3 } -> <fmt:formatNumber value="${numtest3 }" pattern="###,###,###"/></h3>
+	<h3>0 소수점 : ${numtest3 } -> <fmt:formatNumber value="${numtest3 }" pattern="000,000.000"/></h3>
+	<h3># 소수점 : ${numtest3 } -> <fmt:formatNumber value="${numtest3 }" pattern="###,###.###"/></h3>
+	<h3># 소수점 : ${numtest3 } -> <fmt:formatNumber value="1234.1111" pattern="###,###.#"/></h3>
+	<h3>0,# 소수점 : ${numtest3 } -> <fmt:formatNumber value="1234.1" pattern="###,###.00##"/></h3>
 	
 	
 	
